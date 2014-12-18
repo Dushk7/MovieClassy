@@ -42,6 +42,8 @@ public class Frame extends javax.swing.JFrame {
         result.setVisible(false);
         lbl2.setVisible(false);
         lbl3.setVisible(false);
+        lbl4.setVisible(false);
+        lbl5.setVisible(false);
         txt1.setVisible(false);
         jb2.setVisible(false);
         jb3.setVisible(false);
@@ -58,28 +60,30 @@ public class Frame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lbl2 = new javax.swing.JLabel();
         lbl3 = new javax.swing.JLabel();
+        lbl2 = new javax.swing.JLabel();
         jb2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txt1 = new javax.swing.JTextArea();
         jb1 = new javax.swing.JButton();
         jb3 = new javax.swing.JButton();
         result = new javax.swing.JLabel();
+        lbl4 = new javax.swing.JLabel();
+        lbl5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
 
-        lbl2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        jPanel1.add(lbl2);
-        lbl2.setBounds(90, 420, 100, 40);
-
         lbl3.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         lbl3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(lbl3);
         lbl3.setBounds(500, 420, 120, 40);
+
+        lbl2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jPanel1.add(lbl2);
+        lbl2.setBounds(90, 420, 100, 40);
 
         jb2.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
         jb2.setText("GENARATE");
@@ -123,7 +127,20 @@ public class Frame extends javax.swing.JFrame {
         jPanel1.add(result);
         result.setBounds(190, 320, 330, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dushk\\Documents\\NetBeansProjects\\MovieClassy\\Resources\\images\\Background2.jpg")); // NOI18N
+        lbl4.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        lbl4.setForeground(java.awt.Color.orange);
+        lbl4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl4.setText("1st Best Categorie");
+        jPanel1.add(lbl4);
+        lbl4.setBounds(20, 390, 240, 40);
+
+        lbl5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        lbl5.setForeground(java.awt.Color.orange);
+        lbl5.setText("2nd Best Categorie");
+        jPanel1.add(lbl5);
+        lbl5.setBounds(460, 390, 240, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dushk\\Documents\\NetBeansProjects\\MovieClassy\\Resources\\images\\movie.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 682, 460);
 
@@ -146,6 +163,9 @@ public class Frame extends javax.swing.JFrame {
         result.setVisible(true);
         lbl2.setVisible(true);
         lbl3.setVisible(true);
+        lbl4.setVisible(true);
+        lbl5.setVisible(true);
+        
         
         try {
             String newPot = txt1.getText();
@@ -197,6 +217,8 @@ public class Frame extends javax.swing.JFrame {
         lbl3.setText("");
         lbl2.setVisible(false);
         lbl3.setVisible(false);
+        lbl4.setVisible(false);
+        lbl5.setVisible(false);
         jb2.setVisible(false);
         txt1.setVisible(false);
         
@@ -252,6 +274,8 @@ public class Frame extends javax.swing.JFrame {
     private javax.swing.JButton jb3;
     private javax.swing.JLabel lbl2;
     private javax.swing.JLabel lbl3;
+    private javax.swing.JLabel lbl4;
+    private javax.swing.JLabel lbl5;
     private javax.swing.JLabel result;
     private javax.swing.JTextArea txt1;
     // End of variables declaration//GEN-END:variables
